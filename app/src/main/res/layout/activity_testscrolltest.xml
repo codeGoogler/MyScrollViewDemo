@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/green_scheme"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@color/blue3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="right|center_vertical"
+        android:text="我是谁"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/green_scheme"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:text="左移动 scrolllBy"
+            android:layout_weight="1"
+            android:id="@+id/btn_scroby01"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:text="右移动 scrolllBy"
+            android:id="@+id/btn_scroby02"
+            android:layout_weight="1"
+            android:layout_height="45dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/green_scheme"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:text="左移动 scrolllTO"
+            android:layout_weight="1"
+            android:id="@+id/btn_scroto01"
+            android:layout_height="45dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:text="右移动 scrolllTO"
+            android:id="@+id/btn_scroto02"
+            android:layout_weight="1"
+            android:layout_height="45dp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:text="还原"
+        android:id="@+id/btn_reverse"
+        android:layout_weight="1"
+        android:layout_height="45dp" />
+</LinearLayout>
